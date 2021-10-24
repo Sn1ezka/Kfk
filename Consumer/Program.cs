@@ -10,11 +10,11 @@ class Program
         { 
             GroupId = "test-consumer-group",
             BootstrapServers = "localhost:29092",
-            // Note: The AutoOffsetReset property determines the start offset in the event
-            // there are not yet any committed offsets for the consumer group for the
-            // topic/partitions of interest. By default, offsets are committed
-            // automatically, so in this example, consumption will only start from the
-            // earliest message in the topic 'my-topic' the first time you run the program.
+            // Примечание: свойство AutoOffsetReset определяет начальное смещение в событии.
+            // еще нет подтвержденных смещений для группы потребителей для
+            // интересующие темы / разделы. По умолчанию смещения фиксируются
+            // автоматически, поэтому в этом примере потребление начнется только с
+            // самое раннее сообщение в теме 'test-topic' при первом запуске программы.
             AutoOffsetReset = AutoOffsetReset.Earliest
         };
 
@@ -24,7 +24,7 @@ class Program
 
             CancellationTokenSource cts = new CancellationTokenSource();
             Console.CancelKeyPress += (_, e) => {
-                e.Cancel = true; // prevent the process from terminating.
+                e.Cancel = true; // предотвратить завершение процесса.
                 cts.Cancel();
             };
 
@@ -45,7 +45,7 @@ class Program
             }
             catch (OperationCanceledException)
             {
-                // Ensure the consumer leaves the group cleanly and final offsets are committed.
+                // Убедитесь, что потребитель чисто покидает группу и совершены окончательные взаимозачеты.
                 c.Close();
             }
         }
