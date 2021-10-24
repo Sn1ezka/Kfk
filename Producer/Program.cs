@@ -21,8 +21,11 @@ namespace Kafka
                 на который отправляется сообщение, определяется разделителем, о
                 пределенным с помощью свойства конфигурации 'partitioner'.
                 */
-                    var dr = await p.ProduceAsync("test-topic", new Message<Null, string> { Value="test" });
-                    Console.WriteLine($"Delivered '{dr.Value}' to '{dr.TopicPartitionOffset}'");
+                    while (true)
+                    {
+                        var dr = await p.ProduceAsync("test-topic", new Message<Null, string> { Value="test" });
+                        Console.WriteLine($"Delivered '{dr.Value}' to '{dr.TopicPartitionOffset}'");
+                    }
                 }
                 catch (ProduceException<Null, string> e)
                 {
