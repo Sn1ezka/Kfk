@@ -8,7 +8,7 @@ namespace Kafka
     {
         public static async Task Main(string[] args)
         {
-            var config = new ProducerConfig { BootstrapServers = "localhost:29092" };
+            var config = new ProducerConfig { BootstrapServers = "localhost:29092"};
 
             // Если сериализаторы не указаны, сериализаторы по умолчанию из
             // `Confluent.Producer.Serializers` будет автоматически использоваться там, где
@@ -16,7 +16,11 @@ namespace Kafka
             using (var p = new ProducerBuilder<Null, string>(config).Build())
             {
                 try
-                {
+                {/*
+                Асинхронно отправить одно сообщение в тему Kafka. Раздел, 
+                на который отправляется сообщение, определяется разделителем, о
+                пределенным с помощью свойства конфигурации 'partitioner'.
+                */
                     var dr = await p.ProduceAsync("test-topic", new Message<Null, string> { Value="test" });
                     Console.WriteLine($"Delivered '{dr.Value}' to '{dr.TopicPartitionOffset}'");
                 }
