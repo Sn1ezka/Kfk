@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Dev\\Kafka\\Kafka\\Kafka.csproj": {}
+    "D:\\Dev\\Git\\Kfk\\Kafka\\Kafka.csproj": {}
   },
   "projects": {
-    "D:\\Dev\\Kafka\\Kafka\\Kafka.csproj": {
+    "D:\\Dev\\Git\\Kfk\\Kafka\\Kafka.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Dev\\Kafka\\Kafka\\Kafka.csproj",
+        "projectUniqueName": "D:\\Dev\\Git\\Kfk\\Kafka\\Kafka.csproj",
         "projectName": "Kafka",
-        "projectPath": "D:\\Dev\\Kafka\\Kafka\\Kafka.csproj",
+        "projectPath": "D:\\Dev\\Git\\Kfk\\Kafka\\Kafka.csproj",
         "packagesPath": "C:\\Users\\olegb\\.nuget\\packages\\",
-        "outputPath": "D:\\Dev\\Kafka\\Kafka\\obj\\",
+        "outputPath": "D:\\Dev\\Git\\Kfk\\Kafka\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\olegb\\AppData\\Roaming\\NuGet\\NuGet.Config"

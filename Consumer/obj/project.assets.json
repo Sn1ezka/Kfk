@@ -240,11 +240,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Dev\\Kafka\\Consumer\\Consumer.csproj",
+      "projectUniqueName": "D:\\Dev\\Git\\Kfk\\Consumer\\Consumer.csproj",
       "projectName": "Consumer",
-      "projectPath": "D:\\Dev\\Kafka\\Consumer\\Consumer.csproj",
+      "projectPath": "D:\\Dev\\Git\\Kfk\\Consumer\\Consumer.csproj",
       "packagesPath": "C:\\Users\\olegb\\.nuget\\packages\\",
-      "outputPath": "D:\\Dev\\Kafka\\Consumer\\obj\\",
+      "outputPath": "D:\\Dev\\Git\\Kfk\\Consumer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\olegb\\AppData\\Roaming\\NuGet\\NuGet.Config"
