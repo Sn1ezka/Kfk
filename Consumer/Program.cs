@@ -5,7 +5,7 @@ using Confluent.Kafka;
 class Program
 {
     public static void Main(string[] args)
-    {//
+    {
         var conf = new ConsumerConfig
         { 
             GroupId = "test-consumer-group",
